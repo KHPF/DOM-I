@@ -40,3 +40,60 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+document.title = 'Great Idea !'
+
+let navBar = document.querySelector('nav')
+navBar.children[0].textContent  = siteContent.nav["nav-item-1"]
+navBar.children[1].textContent  = siteContent.nav["nav-item-2"]
+navBar.children[2].textContent  = siteContent.nav["nav-item-3"]
+navBar.children[3].textContent  = siteContent.nav["nav-item-4"]
+navBar.children[4].textContent  = siteContent.nav["nav-item-5"]
+navBar.children[5].textContent  = siteContent.nav["nav-item-6"]
+
+
+let newh1 = document.querySelector('h1');
+    newh1.innerHTML= siteContent['cta']['h1'];
+let button = document.querySelector('button')
+  button.innerHTML = siteContent['cta']['button'];
+
+  const newimage = document.querySelector('#cta-img');
+  newimage.setAttribute('src', siteContent.cta['img-src']);
+
+  let textContent = document.querySelectorAll('.text-content')
+ let text1 = textContent[0]
+
+
+ let secondImg = document.getElementById("middle-img");
+secondImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+
+text1.children[0].textContent = "Features"
+text1.children[1].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+
+let text2 = textContent[1]
+text2.children[0].textContent = "About"
+text2.children[1].textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+ 
+  let text3 = textContent[2]
+text3.children[0].textContent = "Services"
+text3.children[1].textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+ 
+const text4 = textContent[3]
+text4.children[0].textContent= "Product"
+text4.children[1].textContent= "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+ 
+  let text5 = textContent[4]
+text5.children[0].textContent= "Vision"
+text5.children[1].textContent= "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+
+
+let contactUs = document.querySelector('.contact')
+contactUs.children[0].textContent = "Contact"
+contactUs.children[1].textContent = "123 Way 456 Street Somewhere, USA"
+contactUs.children[2].textContent = "1 (888) 888-8888"
+contactUs.children[3].textContent = "sales@greatidea.io"
+ 
+  let footer = document.querySelector('footer')
+footer.firstChild.textContent = "Copyright Great Idea! 2018"
